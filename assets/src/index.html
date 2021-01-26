@@ -14,17 +14,23 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <title>Сайт на Bootstrap 4</title>
 </head>
 
-<body>
+<body class="page">
+  <div class="container-fluid">
   <header class="header">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <div class="row d-flex justify-content-between">
-          <div class="col-4 col-md-3 col-xl-2">
-            <a class="logo" href="#">
-              <img class="img-fluid" src="img/logo.jpg" alt="Logo">
+    <nav class="navbar navbar-expand-md navbar-light ">
+      <!-- <div class="container-fluid"> -->
+        <div class="row d-flex justify-content-between ">
+          <div class="col-4 col-md-3 col-xl-2 p-0">
+            <a class="logo">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/logo.png 1x, img/logo@2x.png  2x">
+                <img class="img-fluid" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Logo" width="160" height="100">
+              </picture>
+
             </a>
           </div>
-          <div class="col-1 col-md-8">
+          <div class="col-2 col-md-8 p-0 align-self-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,22 +38,22 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="menu d-flex justify-content-between ">
                 <li class="menu__item">
-                  <a href="#">Home</a>
+                  <a class="menu__link" href="#">Home</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">About</a>
+                  <a class="menu__link" href="#">About</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">Servicing</a>
+                  <a class="menu__link" href="#">Servicing</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">Portfolio</a>
+                  <a class="menu__link" href="#">Portfolio</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">Blog</a>
+                  <a class="menu__link" href="#">Blog</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#">Contacts&nbsp;us</a>
+                  <a class="menu__link" href="#">Contacts&nbsp;us</a>
                 </li>
                 <li class="menu__item">
                   <i class="fa fa-search" aria-hidden="true"></i>
@@ -62,6 +68,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       </div>
     </nav>
   </header>
+  </div>
 
   <!-- Подключаем jQuery с CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
