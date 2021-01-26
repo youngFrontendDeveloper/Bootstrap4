@@ -1,0 +1,36 @@
+.btn {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  border: 2px solid @color-black;
+  background-color: transparent;
+
+  transition: 0.3s;
+
+  @media(min-width: @width-tablet) {
+    font-size: 20px;
+  }
+}
+
+.btn--color--white {
+  color: @color-white;
+  border-color: @color-white;
+}
+
+.btn--color--cyan {
+  color: @color-white;
+  border-color: @color-cyan;
+  background-color: @color-cyan;
+}
+
+.btn:hover {
+  color: inherit;
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}

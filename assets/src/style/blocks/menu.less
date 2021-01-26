@@ -1,7 +1,13 @@
 .menu {
+  flex-direction: column;
   width: 100%;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
+
+  @media(min-width: @width-tablet) {
+    flex-direction: row;
+    font-size: 20px;
+  }
 
 }
 
