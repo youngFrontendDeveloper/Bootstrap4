@@ -1,244 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<div lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans-Light.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.min.css">
-  <title>Сайт на Bootstrap 4</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Light.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Сайт на Bootstrap 4</title>
+  </head>
 
-<body class="page">
+  <body class="page">
 
-  <!-- +++++++++++ Header +++++++++++++ -->
-  <header class="header">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-md navbar-light ">
-        <!-- <div class="container-fluid"> -->
-        <div class="row d-flex justify-content-between ">
-          <div class="col-3 col-md-3 col-lg-2">
-            <a class="logo">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/logo.png 1x, img/logo@2x.png  2x">
-                <img class="img-fluid" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Logo"
-                  width="98" height="110">
-              </picture>
-            </a>
-          </div>
-          <div class="col-3 col-md-8 align-self-center d-flex justify-content-end">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- +++++++++++ Header +++++++++++++ -->
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light ">
+          <!-- <div class="container-fluid"> -->
+          <div class="row d-flex justify-content-between ">
+            <div class="col-3 col-md-3 col-xl-2">
+              <a class="logo">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/logo.png 1x, img/logo@2x.png  2x">
+                  <img class="img-fluid" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="Logo"
+                    width="98" height="110">
+                </picture>
+              </a>
+            </div>
+            <div class="col-3 col-md-9 col-xl-8 align-self-center d-flex justify-content-end">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="menu d-flex justify-content-between ">
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">About</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Servicing</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Portfolio</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Blog</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Contacts&nbsp;us</a>
-                </li>
-                <li class="menu__item">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </li>
-              </ul>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="menu d-flex justify-content-between ">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">About</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Servicing</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Portfolio</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Contacts&nbsp;us</a>
+                  </li>
+                  <li class="menu__item">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- ++++++++++++ Promo +++++++++++++++ -->
-  <section class="promo">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="promo__title">Web development project</h1>
-          <p class="promo__slogan">Very suitable to support all web development projects</p>
-          <button class="button button--color--white promo__button">OUR SERVICES</button>
-          <button class="button button--color--white promo__button">HIRE IS NOW</button>
-        </div>
+        </nav>
       </div>
-    </div>
-  </section>
-  <!-- +++++++++++++++ About +++++++++++++ -->
-  <section class="about">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-9 col-lg-7 ml-auto mr-auto">
-          <h2 class="title">About Us</h2>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </header>
+    <!-- ++++++++++++ Promo +++++++++++++++ -->
+    <section class="promo">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 col-xl-7">
+            <h1 class="promo__title">Web development project</h1>
+            <p class="promo__slogan">Very suitable to support all web development projects</p>
+            <button class="button button--color--white promo__button">OUR SERVICES</button>
+            <button class="button button--color--white promo__button">HIRE IS NOW</button>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <!-- <div class="col-12 col-md-4"> -->
-        <ul class="about__items d-flex justify-content-around">
-          <li class="about__item about__item-1 col-12 col-md-3">
-            <div class="about__picture-box">
-              <picture>
-                <source type="image/webp" srcset="img/internet.webp 1x, img/internet@2x.webp 2x">
-                <img src="img/internet.png" srcset="img/internet.png 1x, img/internet@2x.png 2x" alt="Иконка интернета"
-                  width="62" height="62">
-              </picture>
-            </div>
-            <h3 class="subtitle">Awesome Icons</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-          </li>
-          <li class="about__item about__item-2 col-12 col-md-3">
-            <div class="about__picture-box">
-              <picture>
-                <source type="image/webp" srcset="img/transfer.webp 1x, img/transfer@2x.webp 2x">
-                <img src="img/transfer.png" srcset="img/transfer.png 1x, img/transfer@2x.png 2x" alt="Иконка трансфера"
-                  width="62" height="62">
-              </picture>
-            </div>
-            <h3 class="subtitle">One Page</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-          </li>
-          <li class="about__item about__item-3 col-12 col-md-3">
-            <div class="about__picture-box">
-              <picture>
-                <source type="image/webp" srcset="img/head.webp 1x, img/head@2x.webp 2x">
-                <img src="img/head.png" srcset="img/head.png 1x, img/head@2x.png 2x" alt="Иконка интернета" width="62"
-                  height="62">
-              </picture>
-            </div>
-            <h3 class="subtitle">Fully Responsive</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-          </li>
-        </ul>
-        <!-- </div> -->
-      </div>
-    </div>
-  </section>
-  <!-- +++++++++++++++++++ Services +++++++++++++++++ -->
-  <section class="services">
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-9 col-lg-7">
-          <h2 class="title">Our Services</h2>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+    </section>
+    <!-- +++++++++++++++ About +++++++++++++ -->
+    <section class="about">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 col-xl-7">
+            <h2 class="title">About Us</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="col-12 col-md-4"> -->
+          <ul class="about__items d-flex justify-content-around">
+            <li class="about__item about__item-1 col-12 col-md-3">
+              <div class="about__picture-box">
+                <picture>
+                  <source type="image/webp" srcset="img/internet.webp 1x, img/internet@2x.webp 2x">
+                  <img src="img/internet.png" srcset="img/internet.png 1x, img/internet@2x.png 2x"
+                    alt="Иконка интернета" width="62" height="62">
+                </picture>
+              </div>
+              <h3 class="subtitle">Awesome Icons</h3>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </li>
+            <li class="about__item about__item-2 col-12 col-md-3">
+              <div class="about__picture-box">
+                <picture>
+                  <source type="image/webp" srcset="img/transfer.webp 1x, img/transfer@2x.webp 2x">
+                  <img src="img/transfer.png" srcset="img/transfer.png 1x, img/transfer@2x.png 2x"
+                    alt="Иконка трансфера" width="62" height="62">
+                </picture>
+              </div>
+              <h3 class="subtitle">One Page</h3>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </li>
+            <li class="about__item about__item-3 col-12 col-md-3">
+              <div class="about__picture-box">
+                <picture>
+                  <source type="image/webp" srcset="img/head.webp 1x, img/head@2x.webp 2x">
+                  <img src="img/head.png" srcset="img/head.png 1x, img/head@2x.png 2x" alt="Иконка интернета" width="62"
+                    height="62">
+                </picture>
+              </div>
+              <h3 class="subtitle">Fully Responsive</h3>
+              <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </li>
+          </ul>
+          <!-- </div> -->
         </div>
       </div>
-      <div class="row services__cards">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card services__card">
-            <div class="card__img-box"></div>
-            <div class="card-body card__body">
-              <h5 class="subtitle card-title">Research</h5>
-              <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn button card__button">Read more</a>
-            </div>
-          </div> <!-- end card -->
-        </div> <!-- end col for card -->
+    </section>
+    <!-- +++++++++++++++++++ Services +++++++++++++++++ -->
+    <section class="services">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 col-xl-7">
+            <h2 class="title">Our Services</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+        </div>
+        <div class="row services__cards justify-content-around">
+          <div class="col-12 col-md-5 col-xl-4 d-flex justify-content-center">
+            <div class="card services__card">
+              <div class="card__img-box"></div>
+              <div class="card-body card__body">
+                <h3 class="subtitle card-title">Research</h3>
+                <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <a href="#" class="btn button card__button">Read more</a>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end col for card -->
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card services__card">
-            <div class="card__img-box"></div>
-            <div class="card-body card__body">
-              <h5 class="subtitle card-title">Portfolio</h5>
-              <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn button card__button">Read more</a>
-            </div>
-          </div> <!-- end card -->
-        </div> <!-- end col for card -->
+          <div class="col-12 col-md-5 col-xl-4 d-flex justify-content-center">
+            <div class="card services__card">
+              <div class="card__img-box"></div>
+              <div class="card-body card__body">
+                <h3 class="subtitle card-title">Portfolio</h3>
+                <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <a href="#" class="btn button card__button">Read more</a>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end col for card -->
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card services__card">
-            <div class="card__img-box"></div>
-            <div class="card-body card__body">
-              <h5 class="subtitle card-title">Documentation</h5>
-              <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn button card__button">Read more</a>
-            </div>
-          </div> <!-- end card -->
-        </div> <!-- end col for card -->
+          <div class="col-12 col-md-5 col-xl-4 d-flex justify-content-center">
+            <div class="card services__card">
+              <div class="card__img-box"></div>
+              <div class="card-body card__body">
+                <h3 class="subtitle card-title">Documentation</h3>
+                <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <a href="#" class="btn button card__button">Read more</a>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end col for card -->
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card services__card">
-            <div class="card__img-box"></div>
-            <div class="card-body card__body">
-              <h5 class="subtitle card-title">Support</h5>
-              <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn button card__button">Read more</a>
-            </div>
-          </div> <!-- end card -->
-        </div> <!-- end col for card -->
+          <div class="col-12 col-md-5 col-xl-4 d-flex justify-content-center">
+            <div class="card services__card">
+              <div class="card__img-box"></div>
+              <div class="card-body card__body">
+                <h3 class="subtitle card-title">Support</h3>
+                <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <a href="#" class="btn button card__button">Read more</a>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end col for card -->
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card services__card">
-            <div class="card__img-box"></div>
-            <div class="card-body card__body">
-              <h5 class="subtitle card-title">Development</h5>
-              <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn button card__button">Read more</a>
-            </div>
-          </div> <!-- end card -->
-        </div> <!-- end col for card -->
+          <div class="col-12 col-md-5 col-xl-4 d-flex justify-content-center">
+            <div class="card services__card">
+              <div class="card__img-box"></div>
+              <div class="card-body card__body">
+                <h3 class="subtitle card-title">Development</h3>
+                <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <a href="#" class="btn button card__button">Read more</a>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end col for card -->
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card services__card">
-            <div class="card__img-box"></div>
-            <div class="card-body card__body">
-              <h5 class="subtitle card-title">Design</h5>
-              <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn button card__button">Read more</a>
-            </div>
-          </div> <!-- end card -->
-        </div> <!-- end col for card -->
-      </div><!-- end services__cards-->
-    </div>
-    </div>
-  </section>
+          <div class="col-12 col-md-5 col-xl-4 d-flex justify-content-center">
+            <div class="card services__card">
+              <div class="card__img-box"></div>
+              <div class="card-body card__body">
+                <h3 class="subtitle card-title">Design</h3>
+                <p class="text card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <a href="#" class="btn button card__button">Read more</a>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end col for card -->
+        </div><!-- end services__cards-->
+      </div> <!-- end container-fluid-->
+    </section>
+    <!-- ++++++++++++ Portfolio ++++++++++++++ -->
+    <section class="portfolio">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 col-xl-7">
+            <h2 class="title portfolio__title">Latest Works</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+              ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+          </div>
+        </div>
+        <div class="portfolio__galery row justify-content-center">
+          <!-- <div class="col-6 col-md-6 col-xl-3 d-flex justify-content-center"> -->
+          <button class="button portfolio__button">All</button>
+          <!-- </div> -->
+          <!-- <div class="col-6 col-md-6 col-xl-3 d-flex justify-content-center"> -->
+          <button class="button portfolio__button">Web design</button>
+          <!-- </div> -->
+          <!-- <div class="col-6 col-md-6 col-xl-3 d-flex justify-content-center"> -->
+          <button class="button portfolio__button">UI/UX DESIGN</button>
+          <!-- </div> -->
+          <!-- <div class="col-6 col-md-6 col-xl-3 d-flex justify-content-center"> -->
+          <button class="button portfolio__button">MOCKUPS</button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
 
 
 
+    <!-- Подключаем jQuery с CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!-- Подключаем jQuery с CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
 
-  <!-- JavaScript and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-  </script>
-
-</body>
+  </body>
