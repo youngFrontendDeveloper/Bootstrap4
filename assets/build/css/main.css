@@ -13,7 +13,7 @@ body {
 }
 img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 ul,
 li {
@@ -90,35 +90,31 @@ svg {
   font-size: 15px;
   color: #212121;
 }
-.btn {
+.button {
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding: 18px 20px;
   border: 2px solid #212121;
   background-color: transparent;
   transition: 0.3s;
 }
 @media (min-width: 768px) {
-  .btn {
+  .button {
     font-size: 20px;
   }
 }
-.btn--color--white {
+.button--color--white {
   color: #ffffff;
   border-color: #ffffff;
 }
-.btn--color--cyan {
+.button--color--cyan {
   color: #ffffff;
   border-color: #00897b;
   background-color: #00897b;
 }
-.btn:hover {
+.button:hover {
   color: inherit;
   transform: scale(1.05, 1.05);
   cursor: pointer;
@@ -225,6 +221,12 @@ svg {
     font-size: 22px;
   }
 }
+.promo__button {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .about {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -276,4 +278,90 @@ svg {
     width: 62px;
     height: 62px;
   }
+}
+.services {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #e4fdf9;
+}
+@media (min-width: 768px) {
+  .services {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .services {
+    padding-top: 125px;
+    padding-bottom: 100px;
+  }
+}
+.services__cards {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .services__cards {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .services__cards {
+    margin-top: 115px;
+  }
+}
+.services__card {
+  margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .services__card {
+    margin-bottom: 30px;
+  }
+}
+.card {
+  padding: 60px 50px 50px;
+  background-color: #ffffff;
+  border: 0;
+}
+.card:hover {
+  color: #ffffff;
+  background-color: #00897b;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+.card__img-box {
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/icon-smartphone.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 10px;
+}
+.card__body {
+  padding: 0;
+  padding-top: 35px;
+}
+.card-text {
+  padding-bottom: 50px;
+}
+.card__button {
+  display: block;
+  width: 155px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 0;
+}
+.card__button:hover {
+  border-color: #ffffff;
+}
+.card:hover .card__button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.card:hover .card__img-box {
+  background-image: url(../img/smartphone.webp);
 }

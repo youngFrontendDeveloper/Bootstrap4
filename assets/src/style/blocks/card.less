@@ -1,0 +1,57 @@
+.card {
+  padding: 60px 50px 50px;
+  background-color: @color-white;
+  border: 0;
+
+  &:hover {
+    color: @color-white;
+    background-color: @color-cyan;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+  }
+
+}
+
+.card__img-box {
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/icon-smartphone.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 10px;
+}
+
+.card__body {
+  padding: 0;
+  padding-top: 35px;
+}
+
+.card-text {
+  padding-bottom: 50px;
+}
+
+.card__button {
+  display: block;
+  width: 155px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-radius: 0;
+
+  &:hover {
+    border-color: @color-white;
+  }
+}
+
+.card:hover .card__button {
+  color: @color-white;
+  border-color: @color-white;
+}
+
+.card:hover .card__img-box {
+  background-image: url(../img/smartphone.webp);
+}
