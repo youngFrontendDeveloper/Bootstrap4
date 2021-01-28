@@ -123,6 +123,39 @@ svg {
   transform: scale(1.05, 1.05);
   cursor: pointer;
 }
+.title {
+  margin-bottom: 35px;
+  font-family: "OpenSans-Bold";
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
+.title--color--white {
+  color: #ffffff;
+}
+.subtitle {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+.text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+}
+.logo {
+  width: 98px;
+  height: 110px;
+  display: block;
+}
 .menu {
   flex-direction: column;
   width: 100%;
@@ -190,5 +223,57 @@ svg {
   .promo__slogan {
     margin-bottom: 105px;
     font-size: 22px;
+  }
+}
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+.about__items {
+  flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .about__items {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__items {
+    margin-top: 115px;
+  }
+}
+.about__picture-box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .about__picture-box {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__picture-box {
+    margin-bottom: 35px;
+    width: 62px;
+    height: 62px;
   }
 }
