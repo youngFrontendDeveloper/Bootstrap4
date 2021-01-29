@@ -379,19 +379,19 @@ svg {
   background-image: url(../img/smartphone.webp);
 }
 .portfolio {
-  padding-top: 70px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 @media (min-width: 768px) {
   .portfolio {
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 1200px) {
   .portfolio {
     padding-top: 125px;
-    padding-bottom: 80px;
+    padding-bottom: 135px;
   }
 }
 .portfolio__galery-buttons {
@@ -430,4 +430,20 @@ svg {
 }
 .portfolio__img-block {
   margin-bottom: 20px;
+}
+.portfolio__button-block {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .portfolio__button-block {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio__button-block {
+    margin-top: 125px;
+  }
+}
+.portfolio__button-view {
+  width: 224px;
 }
