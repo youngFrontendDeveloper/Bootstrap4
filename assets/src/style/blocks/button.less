@@ -26,7 +26,18 @@
 }
 
 .button:hover {
-  color: inherit;
+  outline-color: inherit;
   transform: scale(1.05, 1.05);
   cursor: pointer;
+}
+
+.button--active {
+  color: @color-white;
+  background-color: @color-cyan;
+  border-color: @color-cyan;
+  outline-color: inherit;
+}
+
+.button:focus {
+  outline: 2px @color-cyan;
 }

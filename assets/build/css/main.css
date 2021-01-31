@@ -118,9 +118,18 @@ svg {
   background-color: #00897b;
 }
 .button:hover {
-  color: inherit;
+  outline-color: inherit;
   transform: scale(1.05, 1.05);
   cursor: pointer;
+}
+.button--active {
+  color: #ffffff;
+  background-color: #00897b;
+  border-color: #00897b;
+  outline-color: inherit;
+}
+.button:focus {
+  outline: 2px #00897b;
 }
 .title {
   margin-bottom: 35px;
@@ -415,6 +424,7 @@ svg {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
+  border-color: #00897b;
 }
 @media (min-width: 768px) {
   .portfolio__button {

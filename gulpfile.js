@@ -7,7 +7,8 @@ var path = {
         js: 'assets/build/js/',
         css: 'assets/build/css/',
         img: 'assets/build/img/',
-        fonts: 'assets/build/fonts/'
+        fonts: 'assets/build/fonts/',
+        lib: 'assets/build/js/lib/'
     },
     src: {
         html: 'assets/src/*.html',
@@ -16,7 +17,8 @@ var path = {
         img: 'assets/src/img/**/*.*',
         webp: 'assets/src/img/**/*.{png,jpg}',
         fonts: 'assets/src/fonts/**/*.*',
-        sprite: 'assets/src/img/**/*.svg'
+        sprite: 'assets/src/img/**/*.svg',
+        lib: 'assets/src/js/lib/**/*.js'
     },
     watch: {
         html: 'assets/src/**/*.html',
@@ -108,6 +110,12 @@ gulp.task('fonts:build', function () {
         .pipe(gulp.dest(path.build.fonts));
 });
 
+// перенос библиотеки js
+gulp.task('lib:build', function () {
+  return gulp.src(path.src.lib)
+      .pipe(gulp.dest(path.build.lib));
+});
+
 // обработка картинок
 gulp.task('sprite:build', function () {
   return gulp.src(path.src.sprite)
@@ -147,7 +155,7 @@ gulp.task('clean:build', function () {
 
 // очистка кэша
 gulp.task('cache:clear', function () {
-    cache.clearAll();
+  return cache.clearAll();
 });
 
 // сборка
@@ -157,6 +165,7 @@ gulp.task('build',
             'html:build',
             'css:build',
             'js:build',
+            'lib:build',
             'fonts:build',
             'image:build',
             'sprite:build',
