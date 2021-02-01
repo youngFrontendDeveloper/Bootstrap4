@@ -1,0 +1,119 @@
+.pricing {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #f0f1f1;
+
+  @media(min-width: @width-tablet) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @media(min-width: @width-desktop) {
+    padding-top: 125px;
+    padding-bottom: 100px;
+  }
+}
+
+.pricing__items {
+  padding-top: 50px;
+
+  @media(min-width: @width-tablet) {
+    padding-top: 100px;
+  }
+
+  @media(min-width: @width-desktop) {
+    padding-top: 125px;
+  }
+}
+
+.pricing__item {
+  width: 100%;
+  max-width: 385px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: @color-white;
+
+  &:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+  }
+}
+
+.pricing__item:hover .pricing__button,
+.pricing__item:focus .pricing__button {
+  color: @color-white;
+  background-color: @color-cyan;
+  border-color: @color-cyan;
+  outline: 2px @color-cyan;
+}
+
+.pricing__item-head {
+  position: relative;
+  padding-top: 47px;
+  padding-bottom: 65px;
+  color: @color-white;
+  background-color: @color-blue;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 100px;
+    left: 0;
+    bottom: -80px;
+    background-color: #fff;
+    transform: rotate(175deg);
+  }
+}
+
+.pricing__item-title {
+  font-family: "OpenSans-Regular";
+  font-size: 25px;
+  line-height: 1;
+}
+
+.pricing__item-subtitle {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 17px;
+
+  &::before {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    content: "$";
+    line-height: 25px;
+  }
+}
+
+.pricing__item__body {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 62px;
+}
+
+.pricing__text {
+  margin: 0;
+  padding-top: 33px;
+  padding-bottom: 10px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.pricing__text-big {
+  font-size: 50px;
+  line-height: 1;
+}
+
+.pricing__button {
+  display: block;
+  margin-top: 63px;
+}
