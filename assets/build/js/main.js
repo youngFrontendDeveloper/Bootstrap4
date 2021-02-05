@@ -21,9 +21,9 @@ let mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
   slideToClickedSlide: true,
   // navigation: {
   //   nextEl: '.swiper-button-next',

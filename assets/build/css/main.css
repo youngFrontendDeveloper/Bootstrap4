@@ -445,6 +445,7 @@ svg {
   justify-content: center;
 }
 .portfolio__img-block {
+  position: relative;
   max-width: 500px;
   margin-bottom: 20px;
 }
@@ -452,14 +453,16 @@ svg {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 15px;
   content: "";
-  width: 100%;
+  width: calc(100% - 30px);
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.portfolio__img-block:hover .portfolio__img-block::before {
+.portfolio__img-block:hover {
   cursor: pointer;
+}
+.portfolio__img-block:hover::before {
   display: block;
 }
 .portfolio__img-block--darkened {
@@ -656,6 +659,7 @@ svg {
 }
 .swiper-card__img {
   border-radius: 8px;
+  overflow: hidden;
 }
 .swiper-card__text {
   padding-left: 20px;
