@@ -25,10 +25,7 @@ let mySwiper = new Swiper('.swiper-container', {
     delay: 3000,
   },
   slideToClickedSlide: true,
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
+
   breakpoints: {
     540: {
       slidesPerView: 2,
@@ -39,5 +36,10 @@ let mySwiper = new Swiper('.swiper-container', {
       spaceBetween: 10,
     }
   }
+});
 
+
+// Добавление класса  reverse элементам в blog
+$(document).ready(function(){
+  $('.blog__item:odd').addClass('reverse');
 });

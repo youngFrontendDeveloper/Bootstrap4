@@ -728,3 +728,77 @@ svg {
 .social__link:hover > .fa {
   color: #ffffff;
 }
+.blog {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-color: #e4fdf9;
+}
+@media (min-width: 768px) {
+  .blog {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog {
+    padding-top: 125px;
+    padding-bottom: 135px;
+  }
+}
+.blog__items {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .blog__items {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog__items {
+    margin-top: 125px;
+  }
+}
+.blog__item {
+  display: flex;
+}
+.blog__caption {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #212121;
+  cursor: pointer;
+}
+.blog__caption:hover {
+  color: #00897b;
+}
+@media (min-width: 768px) {
+  .blog__caption {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog__caption {
+    margin-top: 60px;
+  }
+}
+.fa-calendar,
+.fa-file-o {
+  margin-right: 15px;
+  font-size: 17px;
+  color: #212121;
+}
+.blog__date {
+  margin-right: 45px;
+}
+.blog__text {
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 50px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}

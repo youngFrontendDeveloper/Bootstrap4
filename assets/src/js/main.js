@@ -39,7 +39,8 @@ let mySwiper = new Swiper('.swiper-container', {
       spaceBetween: 10,
     }
   }
-
 });
 
-
+$(document).ready(function(){
+  $('blog__item:odd').addClass('reverse');
+});
