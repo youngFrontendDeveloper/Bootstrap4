@@ -42,5 +42,5 @@ let mySwiper = new Swiper('.swiper-container', {
 });
 
 $(document).ready(function(){
-  $('blog__item:odd').addClass('reverse');
+  $('.blog__item:odd').addClass('reverse');
 });

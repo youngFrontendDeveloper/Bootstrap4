@@ -135,7 +135,7 @@ svg {
   margin-bottom: 35px;
   font-family: "OpenSans-Bold";
   font-size: 25px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -693,13 +693,19 @@ svg {
     width: 270px;
   }
 }
-.fa {
+.fa-facebook,
+.fa-twitter,
+.fa-comments,
+.fa-dribbble {
   font-size: 20px;
   line-height: 30px;
   color: #00897b;
 }
 @media (min-width: 1200px) {
-  .fa {
+  .fa-facebook,
+  .fa-twitter,
+  .fa-comments,
+  .fa-dribbble {
     font-size: 30px;
     line-height: 50px;
   }
@@ -777,7 +783,7 @@ svg {
 }
 @media (min-width: 768px) {
   .blog__caption {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -801,4 +807,189 @@ svg {
 }
 .reverse {
   flex-direction: row-reverse;
+}
+.blog__button {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .blog__button {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog__button {
+    margin-top: 125px;
+  }
+}
+.contact {
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: url(../img/contact-bg.webp), rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .contact {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    padding-top: 125px;
+    padding-bottom: 135px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .promo {
+    background: url(../img/contact-bg@2x.webp), rgba(0, 0, 0, 0.8);
+    background-size: cover;
+  }
+}
+.contact__items {
+  margin-top: 70px;
+}
+@media (min-width: 1200px) {
+  .contact__items {
+    margin-top: 100px;
+  }
+}
+.contact__item {
+  max-width: 280px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .contact__item {
+    margin-bottom: 80px;
+  }
+}
+.contact__img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3949ab;
+  border-radius: 50%;
+}
+@media (min-width: 1200px) {
+  .contact__img {
+    width: 106px;
+    height: 106px;
+  }
+}
+.contact__text {
+  display: block;
+  margin-top: 20px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.fa-map-marker,
+.fa-phone,
+.fa-envelope-o {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #ffffff;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 1200px) {
+  .fa-map-marker,
+  .fa-phone,
+  .fa-envelope-o {
+    font-size: 62px;
+  }
+}
+.contact__link {
+  color: #ffffff;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.form__item {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 30px 25px;
+  color: #212121;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .form__item {
+    width: calc(50% - 10px);
+  }
+}
+.form__textarea {
+  height: 200px;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .form__textarea {
+    height: 325px;
+  }
+}
+.form__button {
+  margin-left: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .form__button {
+    width: 220px;
+  }
+}
+::-webkit-input-placeholder {
+  color: #212121;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+::-moz-placeholder {
+  color: #212121;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+:-moz-placeholder {
+  color: #212121;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #212121;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer__text {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
 }
