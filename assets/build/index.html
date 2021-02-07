@@ -17,12 +17,14 @@
 </head>
 
 <body class="page">
+  <div class="to-top">
+    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+  </div>
 
   <!-- +++++++++++ Header +++++++++++++ -->
-  <header class="header">
+  <header class="header" id="home">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-md navbar-light ">
-        <!-- <div class="container-fluid"> -->
+      <nav class="navbar">
         <div class="row d-flex justify-content-between ">
           <div class="col-3 col-md-3 col-xl-2">
             <a class="logo">
@@ -34,39 +36,38 @@
               </picture>
             </a>
           </div>
-          <div class="col-3 col-md-9 col-xl-8 align-self-center d-flex justify-content-end">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="menu d-flex justify-content-between ">
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">About</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Servicing</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Portfolio</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Blog</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Contacts&nbsp;us</a>
-                </li>
-                <li class="menu__item">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </li>
-              </ul>
-            </div>
+          <div class="col-3 col-md-9 col-xl-8 align-self-center p-0">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link menu__link--active" href="#home">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#servicing">Servicing</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#blog">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contact">Contacts&nbsp;us</a>
+              </li>
+              <li class="menu__item">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </li>
+            </ul>
           </div>
-        </div>
+          <div class="col-1 p-0 ">
+            <button class="button-menu" type="button">
+              <i class="fa fa-times" aria-hidden="true"></i>
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div><!-- end row-->
       </nav>
     </div>
   </header>
@@ -84,7 +85,7 @@
     </div>
   </section>
   <!-- +++++++++++++++ About +++++++++++++ -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-10 col-md-9 col-xl-7">
@@ -134,7 +135,7 @@
     </div>
   </section>
   <!-- +++++++++++++++++++ Services +++++++++++++++++ -->
-  <section class="services">
+  <section class="services" id="servicing">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-10 col-md-9 col-xl-7">
@@ -226,7 +227,7 @@
     </div> <!-- end container-fluid-->
   </section>
   <!-- ++++++++++++ Portfolio ++++++++++++++ -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-10 col-md-9 col-xl-7">
@@ -303,7 +304,7 @@
     </div><!-- end container-fluid-->
   </section>
   <!-- +++++++++++++++Pricing ++++++++++++ -->
-  <section class="pricing">
+  <section class="pricing" id="pricing">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 col-md-9 col-xl-7">
@@ -374,7 +375,7 @@
     </div><!-- end container-fluid -->
   </section>
   <!-- ++++++++ Team +++++++++++++ -->
-  <section class="team">
+  <section class="team" id="team">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 col-md-9 col-xl-7">
@@ -541,7 +542,7 @@
     </div><!-- end container-fluid-->
   </section>
   <!-- +++++++++++++ Blog ++++++++++++ -->
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 col-md-9 col-xl-7">
@@ -629,7 +630,7 @@
     </div><!-- end container-fluid -->
   </section>
   <!-- ++++++++++ Contact +++++++++++++ -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-10 col-md-9 col-xl-7">
@@ -667,7 +668,8 @@
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
             </div>
             <span class="contact__text">
-              Nobinagar savar,Dhaka Bangladesh
+              <a class="contact__link" href="mailto:quickmasud@gmail.com">quickmasud@gmail.com</a>
+              <a class="contact__link" href="mailto:quickmasud@yahoo.com">quickmasud@yahoo.com</a>
             </span>
           </div><!-- end contact__item -->
         </div><!-- end col -->
@@ -685,9 +687,11 @@
     </div><!-- end container-fluid -->
   </section>
   <footer class="footer">
-    <div class="row justify-content-center">
-      <div class="col-8 col-xl-4 d-flex justify-content-center">
-        <span class="footer__text"> All rights Reserved &copy; 2017</span>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-8 col-xl-4 d-flex justify-content-center">
+          <span class="footer__text"> All rights Reserved &copy; 2017</span>
+        </div>
       </div>
     </div>
   </footer>

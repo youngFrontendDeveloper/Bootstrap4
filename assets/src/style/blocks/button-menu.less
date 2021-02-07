@@ -1,0 +1,27 @@
+.button-menu {
+  display: block;
+  padding-top: 30px;
+  color: @color-black;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: transparent;
+
+  &:hover {
+    color: @color-cyan;
+  }
+
+  @media(min-width: @width-tablet) {
+    display: none;
+  }
+}
+
+.button-menu:focus {
+  outline: 1px dotted transparent;
+}
+
+.fa-times,
+.fa-bars {
+  display: none;
+  font-size: 40px;
+}

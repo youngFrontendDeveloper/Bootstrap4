@@ -92,6 +92,19 @@ svg {
   font-size: 15px;
   color: #212121;
 }
+.to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  font-size: 60px;
+  color: #3949ab;
+  cursor: pointer;
+  z-index: 99;
+}
+.to-top:hover {
+  color: #00897b;
+}
 .button {
   color: #212121;
   font-family: "Open Sans";
@@ -170,14 +183,27 @@ svg {
 }
 .menu {
   flex-direction: column;
-  width: 100%;
+  display: flex;
+  width: 200px;
+  padding-top: 30px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 }
 @media (min-width: 768px) {
   .menu {
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0;
     font-size: 20px;
+  }
+}
+.menu__item {
+  padding-top: 10px;
+}
+@media (min-width: 768px) {
+  .menu__item {
+    padding-top: 0px;
   }
 }
 .menu__link {
@@ -186,8 +212,37 @@ svg {
   transition: 0.3s;
 }
 .menu__link:hover {
-  border-bottom: 1px solid #212121;
   color: #212121;
+  border-bottom: 1px solid #212121;
+}
+.menu__link--active {
+  color: #00897b;
+  border-bottom: 0;
+}
+.button-menu {
+  display: block;
+  padding-top: 30px;
+  color: #212121;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: transparent;
+}
+.button-menu:hover {
+  color: #00897b;
+}
+@media (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
+}
+.button-menu:focus {
+  outline: 1px dotted transparent;
+}
+.fa-times,
+.fa-bars {
+  display: none;
+  font-size: 40px;
 }
 .promo {
   padding-top: 70px;
@@ -909,6 +964,9 @@ svg {
 .contact__link {
   color: #ffffff;
 }
+.contact__link:hover {
+  color: #00897b;
+}
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -944,11 +1002,16 @@ svg {
   margin-left: auto;
   padding-top: 18px;
   padding-bottom: 18px;
+  transition: 0.3s;
 }
 @media (min-width: 768px) {
   .form__button {
     width: 220px;
   }
+}
+.form__button:hover {
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
 }
 ::-webkit-input-placeholder {
   color: #212121;
