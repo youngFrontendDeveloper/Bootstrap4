@@ -9,7 +9,17 @@
 node_modules/
 npm-debug.*
 .github/
-source/
+src/
 # source/css/*.css
 # source/css/*.map
 Thumbs.db
+.editorconfig
+.gitattributes
+.gitignore
+.stylelintrc
+.travis.yml
+Contributing.md
+gulpfile.js
+package-lock.json
+package.json
+
