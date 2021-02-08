@@ -36,7 +36,7 @@
 
 .blog__caption {
   display: block;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 30px;
   font-family: "Open Sans";
   font-weight: 600;
@@ -60,13 +60,34 @@
 
 .fa-calendar,
 .fa-file-o {
-  margin-right: 15px;
-  font-size: 17px;
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 15px;
+
   color: @color-black;
+
+  @media(min-width: @width-tablet) {
+    margin-right: 15px;
+    font-size: 17px;
+  }
 }
 
 .blog__date {
-  margin-right: 45px;
+  margin-right: 10px;
+  font-size: 13px;
+
+  @media(min-width: @width-tablet) {
+    margin-right: 45px;
+    font-size: 15px;
+  }
+}
+
+.blog__category {
+  font-size: 13px;
+
+  @media(min-width: @width-tablet) {
+    font-size: 15px;
+  }
 }
 
 .blog__text {
@@ -80,7 +101,6 @@
 }
 
 .blog__button {
-  margin-top: 50px;
 
   @media(min-width: @width-tablet) {
     margin-top: 70px;

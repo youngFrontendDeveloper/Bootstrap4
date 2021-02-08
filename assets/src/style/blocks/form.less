@@ -1,9 +1,12 @@
 .form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
 
+  @media(min-width: @width-tablet) {
+    justify-content: space-between;
+  }
 }
 
 .form__item {
@@ -20,7 +23,6 @@
   @media(min-width: @width-tablet) {
     width: calc(50% - 10px);
   }
-
 }
 
 .form__textarea {
@@ -33,13 +35,13 @@
 }
 
 .form__button {
-  margin-left: auto;
+  width: 220px;
   padding-top: 18px;
   padding-bottom: 18px;
   transition: 0.3s;
 
   @media(min-width: @width-tablet) {
-    width: 220px;
+    margin-left: auto;
   }
 
   &:hover {

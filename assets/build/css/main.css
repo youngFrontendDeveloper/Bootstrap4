@@ -95,15 +95,25 @@ svg {
 .to-top {
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: 20px;
   display: none;
-  font-size: 60px;
+  font-size: 40px;
   color: #3949ab;
   cursor: pointer;
   z-index: 99;
 }
 .to-top:hover {
   color: #00897b;
+}
+@media (min-width: 768px) {
+  .to-top {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .to-top {
+    font-size: 60px;
+  }
 }
 .button {
   color: #212121;
@@ -294,6 +304,7 @@ svg {
   }
 }
 .promo__button {
+  width: 180px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 20px;
@@ -505,23 +516,21 @@ svg {
   margin-bottom: 20px;
 }
 .portfolio__img-block::before {
-  display: none;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 15px;
   content: "";
   width: calc(100% - 30px);
   height: 100%;
+  transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .portfolio__img-block:hover {
   cursor: pointer;
 }
 .portfolio__img-block:hover::before {
-  display: block;
-}
-.portfolio__img-block--darkened {
-  opacity: 0.5;
+  opacity: 1;
 }
 .portfolio__button-block {
   margin-top: 50px;
@@ -824,7 +833,7 @@ svg {
 }
 .blog__caption {
   display: block;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 30px;
   font-family: "Open Sans";
   font-weight: 600;
@@ -848,12 +857,35 @@ svg {
 }
 .fa-calendar,
 .fa-file-o {
-  margin-right: 15px;
-  font-size: 17px;
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 15px;
   color: #212121;
 }
+@media (min-width: 768px) {
+  .fa-calendar,
+  .fa-file-o {
+    margin-right: 15px;
+    font-size: 17px;
+  }
+}
 .blog__date {
-  margin-right: 45px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .blog__date {
+    margin-right: 45px;
+    font-size: 15px;
+  }
+}
+.blog__category {
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .blog__category {
+    font-size: 15px;
+  }
 }
 .blog__text {
   margin: 0;
@@ -862,9 +894,6 @@ svg {
 }
 .reverse {
   flex-direction: row-reverse;
-}
-.blog__button {
-  margin-top: 50px;
 }
 @media (min-width: 768px) {
   .blog__button {
@@ -970,8 +999,13 @@ svg {
 .form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .form {
+    justify-content: space-between;
+  }
 }
 .form__item {
   width: 100%;
@@ -999,14 +1033,14 @@ svg {
   }
 }
 .form__button {
-  margin-left: auto;
+  width: 220px;
   padding-top: 18px;
   padding-bottom: 18px;
   transition: 0.3s;
 }
 @media (min-width: 768px) {
   .form__button {
-    width: 220px;
+    margin-left: auto;
   }
 }
 .form__button:hover {
@@ -1053,6 +1087,11 @@ svg {
 .footer__text {
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
+}
+@media (min-width: 768px) {
+  .footer__text {
+    font-size: 20px;
+  }
 }
