@@ -15,15 +15,15 @@ const del = require( "del" );
 const sync = require( "browser-sync" ).create();
 
 
-/* пути к исходным файлам (src), к готовым файлам (docs), а также к тем, за изменениями которых нужно наблюдать (watch) */
+/* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 let path = {
   build: {
-    html: "docs/",
-    js: "docs/js/",
-    css: "docs/css/",
-    img: "docs/img/",
-    fonts: "docs/fonts/",
-    lib: "docs/js/lib/"
+    html: "build/",
+    js: "build/js/",
+    css: "build/css/",
+    img: "build/img/",
+    fonts: "build/fonts/",
+    lib: "build/js/lib/"
   },
   src: {
     html: "src/*.html",
@@ -44,7 +44,7 @@ let path = {
     fonts: "srs/fonts/**/*.*",
     sprite: "src/img/**/*.svg"
   },
-  clean: "./docs/*"
+  clean: "./build/*"
 };
 
 // Styles
