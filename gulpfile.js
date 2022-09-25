@@ -15,36 +15,36 @@ const del = require( "del" );
 const sync = require( "browser-sync" ).create();
 
 
-/* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
+/* пути к исходным файлам (src), к готовым файлам (docs), а также к тем, за изменениями которых нужно наблюдать (watch) */
 let path = {
   build: {
-    html: "assets/build/",
-    js: "assets/build/js/",
-    css: "assets/build/css/",
-    img: "assets/build/img/",
-    fonts: "assets/build/fonts/",
-    lib: "assets/build/js/lib/"
+    html: "docs/",
+    js: "docs/js/",
+    css: "docs/css/",
+    img: "docs/img/",
+    fonts: "docs/fonts/",
+    lib: "docs/js/lib/"
   },
   src: {
-    html: "assets/src/*.html",
-    js: "assets/src/js/main.js",
-    style: "assets/src/style/main.less",
-    img: "assets/src/img/**/*.*",
-    webp: "assets/src/img/**/*.{png,jpg}",
-    fonts: "assets/src/fonts/**/*.*",
-    sprite: "assets/src/img/icons/*.svg",
-    lib: "assets/src/js/lib/**/*.js"
+    html: "src/*.html",
+    js: "src/js/main.js",
+    style: "src/style/main.less",
+    img: "src/img/**/*.*",
+    webp: "src/img/**/*.{png,jpg}",
+    fonts: "src/fonts/**/*.*",
+    sprite: "src/img/icons/*.svg",
+    lib: "src/js/lib/**/*.js"
   },
   watch: {
-    html: "assets/src/**/*.html",
-    js: "assets/src/js/**/*.js",
-    css: "assets/src/style/**/*.less",
-    img: "assets/src/img/**/*.*",
-    webp: "assets/src/img/**/*.{png,jpg}",
-    fonts: "assets/srs/fonts/**/*.*",
-    sprite: "assets/src/img/**/*.svg"
+    html: "src/**/*.html",
+    js: "src/js/**/*.js",
+    css: "src/style/**/*.less",
+    img: "src/img/**/*.*",
+    webp: "src/img/**/*.{png,jpg}",
+    fonts: "srs/fonts/**/*.*",
+    sprite: "src/img/**/*.svg"
   },
-  clean: "./assets/build/*"
+  clean: "./docs/*"
 };
 
 // Styles
@@ -175,7 +175,7 @@ const reload = (done) => {
 //Watcher
 
 const watcher = () => {
-  gulp.watch( "src/less/**/*.less", gulp.series( styles ) );
+  gulp.watch( "src/style/**/*.less", gulp.series( styles ) );
   gulp.watch( "src/js/script.js", gulp.series( scripts ) );
   gulp.watch( "src/*.html", gulp.series( html, reload ) );
 };
@@ -190,7 +190,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
-    sprite,
+    // sprite,
     createWebp
   )
 );
@@ -207,7 +207,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
-    sprite,
+    // sprite,
     createWebp
   ),
   gulp.series(
